@@ -1,0 +1,13 @@
+Subject: New Contact Form Submission
+
+Hello,
+
+You have received a new contact form submission. Here are the details:
+
+Full Name: {{ full_name }}
+Email Address: {{ email }}
+Subject: {{ subject }}
+Message: {{ message }}
+
+Regards,
+Group A

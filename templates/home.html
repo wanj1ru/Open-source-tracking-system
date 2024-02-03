@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static\styles.css">
+    <link rel="shortcut icon" href="static\images\icons8-letter-a-96.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!--This is the beginning of navigation bar-->
+    <nav class="navbar navbar-expand-lg py-3 bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h2 class="fw-bolder">Group A.</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a href="{{url_for('login')}}" class="btn btn-primary ms-lg-3">Log In</a>
+                <a href="{{url_for('register')}}" class="btn btn-success ms-lg-3">Sign Up</a>
+
+            </div>
+        </div>
+    </nav><!--This is the end of navigation bar-->
+
+    <!--This is the beginning of Hero-->
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h1 class="display-4 text-white">Welcome To Issue Tracker</h1>
+                    <p class="text-white my-4">Track and manage software issues with ease.</p>
+                    <a href="{{url_for('register')}}" class="btn btn-primary p-3 me-3">Get Started</a>
+                    <a href="{{url_for('login')}}" class="btn btn-outline-light p-3">My Account</a>
+
+                </div>
+            </div>
+        </div>
+    </div><!--This is the end of Hero-->
+
+    <!--This is the beginning of Services-->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">Services</h6>
+                    <h1>Our Services</h1>
+                    <p>Below are the services that we provide: </p>
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox ">
+                            <i class='bx bxs-comment-error'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Issue Tracking</h5>
+                        <p>Keep track of software issues and bugs. Efficiently track and manage malicious code with our
+                            user-friendly platform</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox ">
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Security</h5>
+                        <p>Prioritize software security by identifying and mitigating vulnerabilities in open-source
+                            components.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service card-effect">
+                        <div class="iconbox ">
+                            <i class='bx bxs-bar-chart-alt-2'></i>
+                        </div>
+                        <h5 class="mt-4 mb-2">Reporting</h5>
+                        <p>Generate detailed reports and analytics to gain insights into the progress and performance of
+                            your projects.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!--This is the end of Services-->
+
+    <!--This is the beginning of Team-->
+    <section class="bg-light" id="team">
+        <div class="container">
+            <div class="row mb-5 ">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">TEAM</h6>
+                    <h1>Meet Our Crew Members</h1>
+                    <p>Group A consists of the following members:</p>
+                </div>
+            </div>
+            <div class="row text-center d-flex flex-row g-3">
+                <div class="col lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="static\images\esther.jpg" class="img-fluid" alt="">
+                        <h5 class="mb-0">Esther</h5>
+                        <p>Web Developer</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="static\images\caleb.jpg" alt="">
+                        <h5 class="mb-0">Caleb</h5>
+                        <p>Web Developer</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="static\images\brian.jpg" alt="">
+                        <h5 class="mb-0">Brian</h5>
+                        <p>Web Developer</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="static\images\mose.jpg" alt="">
+                        <h5 class="mb-0">Moses</h5>
+                        <p>Web Developer</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col lg-3 col-sm-6">
+                    <div class="team-member card-effect">
+                        <img src="static\images\boru.jpeg" alt="Image of Boru">
+                        <h5 class="mb-0">Boru</h5>
+                        <p>Web Developer</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!--This is the end of Team-->
+
+    <!--This is the beginning of Contact-->
+    <section id="contact">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <h6 class="text-primary">CONTACT</h6>
+                    <h1>Get In Touch</h1>
+
+                </div>
+            </div>
+            <form action="" method="POST" class="row g-3 justify-content-center">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Full Name" name="full_name" required>
+                </div>
+                <div class="col-md-5">
+                    <input type="email" class="form-control" placeholder="Email Address" name="email" required>
+                </div>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                </div>
+                <div class="col-md-10">
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"
+                        required></textarea>
+                </div>
+                <div class="col-md-10 d-grid">
+                    <button class="btn btn-primary ">Contact</button>
+
+                </div>
+
+            </form>
+            {% if message_sent %}
+            <div class="alert alert-success mt-3" role="alert">
+                Your message has been sent successfully!
+            </div>
+            {% endif %}
+        </div>
+
+    </section><!--This is the end of Contact-->
+
+    <footer>
+        <div class="footer-top">
+            <div class="container justify-content-between">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="fw-bolder text-white">Group A.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        @2023 copyright all reserved by Group A
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
