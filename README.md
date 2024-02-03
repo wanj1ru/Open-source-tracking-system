@@ -9,8 +9,7 @@ This Flask project is a web application that provides functionality for user reg
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/OmoshB/Flask.git
-    cd Flask/
+    gh repo clone wanj1ru/Open-source-tracking-system
     ```
 
     This will clone the repository and change your current working directory to the project folder.
